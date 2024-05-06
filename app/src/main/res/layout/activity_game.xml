@@ -1,0 +1,81 @@
+<!-- activity_game.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+       tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/petImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable /pet_default"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:id="@+id/feedButtonButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feed"
+        android:layout_below="@+id/petImage"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp" />
+    <Button
+        android:id="@+id/playButtonButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_below="@+id/feedButtonButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+    <Button
+        android:id="@+id/cleanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clean"
+        android:layout_below="@+id/playButtonButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+    <TextView
+        android:id="@+id/healthStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health:"
+        android:layout_below="@+id/petImage"
+        android:layout_toEndOf="@+id/feedButtonButton"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/hungerStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/healthStatus"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/feedButtonButton"
+        android:text="Hunger:" />
+    <TextView
+        android:id="@+id/cleanlinessStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cleanliness"
+        android:layout_below="@+id/hungerStatus"
+        android:layout_toEndOf="@+id/feedButtonButton"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+</RelativeLayout>
